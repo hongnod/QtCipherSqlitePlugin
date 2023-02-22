@@ -12,3 +12,9 @@ wxSQLite3 is a C++ wrapper around the public domain SQLite 3.x database and is s
 You could find how to compile this plugin at http://qtciphersqliteplugin.galaxyworld.org.
 
 Please read [Wiki](https://github.com/devbean/QtCipherSqlitePlugin/wiki) for more details.
+
+
+static plugin & cmake import:
+1、using sqlitecipher - static.pro (CONFIG+= static)
+2、in your program's cmakelist.txt add this lib in:target_link_libraries(...) block.
+3、in file where "MainWindow" in, add: Q_IMPORT_PLUGIN(SqliteCipherDriverPlugin)
